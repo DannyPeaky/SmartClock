@@ -1,6 +1,6 @@
 # Smart Clock
 
-Executable for [Smart Clock](https://www.smart-clock.co.uk)
+Executable for [Smart Clock](https://www.smartclock.app)
 
 ## Usage
 
@@ -25,8 +25,9 @@ The main program
 ### smartclock-power
 
 ```bash
-  smartclock-power on   #Turn on the display
-  smartclock-power off  #Turn off the display
+  smartclock-power -p on   # Turn on the display
+  smartclock-power -p off  # Turn off the display
+  smartclock-power         # Toggle display
 ```
 
 ### smartclock-remote
@@ -34,7 +35,17 @@ The main program
 A slightly modified version of thorsten-gehrig's alexa-remote-control.
 
 ```bash
-  smartclock-remote {userid} --rt {amazon refresh token} {command}
+  Usage of smartclock-remote:
+      -id string
+          Smart Clock User ID
+      -cmd string
+        Alexa Command [login, devices, notifications, queue]
+      -deviceSerialNumber string
+          The Device Serial Number (Required for queue)
+      -deviceType string
+          The Device Type (Required for queue)
+      -token string
+          Alexa Token (Required for login)
 ```
 
 An amazon refresh token can be obtained using Apollon77's alexa-cookie.
@@ -44,7 +55,7 @@ An amazon refresh token can be obtained using Apollon77's alexa-cookie.
 Downloads the version of smartclock provided and installs.
 
 ```bash
-  smartclock-updater 3.1.1
+  smartclock-updater {version}
 ```
 
 ## Acknowledgements
