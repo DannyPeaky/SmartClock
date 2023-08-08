@@ -1,6 +1,6 @@
 # Smart Clock
 
-Executable for [Smart Clock](https://www.smart-clock.co.uk)
+Executable for [Smart Clock](https://www.smartclock.app)
 
 ## Install Dependencies
 
